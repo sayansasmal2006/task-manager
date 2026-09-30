@@ -1,7 +1,7 @@
 import "./App.css";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -18,7 +18,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <BrowserRouter basename="/task-manager">
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -69,7 +69,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
